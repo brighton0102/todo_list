@@ -6,6 +6,20 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="todo-app">
+            <h2>Today's To Do</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your list">
+                <button class="add-btn">Add</button>
+            </div>
+            <ul class="list-container">
+                <li class="list-item"></li>
+            </ul>
+            <div class="clear-all-btn">
+                <button id="clear-btn">Clear all completed</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
