@@ -20,10 +20,102 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
-  background-color: aqua;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;AACJ","sourcesContent":["body {\r\n    background-color: aqua;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d47fff, #7feaff);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.add-btn {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.check-box {
+  margin-right: 1rem;
+}
+
+.list-item {
+  border-bottom: 1px solid #c8c8c8;
+  padding: 1rem 1rem;
+}
+
+#clear-btn {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+
+.clear-all-btn {
+  display: flex;
+  justify-content: center;
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,SAAA;EACA,UAAA;EACA,kCAAA;EACA,sBAAA;AAAF;;AAGA;EACE,WAAA;EACA,iBAAA;EACA,qDAAA;EACA,aAAA;AAAF;;AAGA;EACE,WAAA;EACA,gBAAA;EACA,gBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,cAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,OAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;AAAF;;AAGA;EACE,gBAAA;EACA,eAAA;EACA,2BAAA;EACA,iBAAA;EACA,eAAA;EACA,WAAA;AAAF;;AAGA;EACE,kBAAA;AAAF;;AAGA;EACE,gCAAA;EACA,kBAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;AAAF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #d47fff, #7feaff);\r\n  padding: 10px;\r\n}\r\n\r\n.todo-app {\r\n  width: 100%;\r\n  max-width: 540px;\r\n  background: #fff;\r\n  margin: 100px auto 20px;\r\n  padding: 40px 30px 70px;\r\n  border-radius: 10px;\r\n}\r\n\r\n.todo-app h2 {\r\n  color: #002765;\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.row {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  background: #edeef0;\r\n  border-radius: 30px;\r\n  padding-left: 20px;\r\n  margin-bottom: 25px;\r\n}\r\n\r\ninput {\r\n  flex: 1;\r\n  border: none;\r\n  outline: none;\r\n  background: transparent;\r\n  padding: 10px;\r\n  font-weight: 400;\r\n}\r\n\r\n.add-btn {\r\n  border: none;\r\n  outline: none;\r\n  padding: 16px 50px;\r\n  background: #ff5945;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border-radius: 40px;\r\n}\r\n\r\nul li {\r\n  list-style: none;\r\n  font-size: 17px;\r\n  padding: 12px 8px 12px 50px;\r\n  user-select: none;\r\n  cursor: pointer;\r\n  color: #000;\r\n}\r\n\r\n.check-box {\r\n  margin-right: 1rem;\r\n}\r\n\r\n.list-item {\r\n  border-bottom: 1px solid #c8c8c8;\r\n  padding: 1rem 1rem;\r\n}\r\n\r\n#clear-btn {\r\n  border: none;\r\n  outline: none;\r\n  padding: 16px 50px;\r\n  background: #ff5945;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border-radius: 40px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.clear-all-btn {\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -552,8 +644,38 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
 
+
+const tasks = [
+  {
+    description: 'learn javascript',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'learn OOP',
+    completed: false,
+    index: 0,
+  },
+];
+
+const showTasks = () => {
+  const container = document.querySelector('.list-container');
+
+  // Sorting components array based on index property
+
+  tasks.sort((a, b) => a.index - b.index);
+
+  tasks.forEach((task) => {
+    const items = document.createElement('li');
+    items.className = 'list-item';
+    items.innerHTML = `<input class="check-box" type="checkbox">${task.description}`;
+    container.appendChild(items);
+  });
+};
+
+window.addEventListener('load', showTasks);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle6c798c95d00664c490ba.js.map
+//# sourceMappingURL=bundle2789dd4f83429708e0ae.js.map
