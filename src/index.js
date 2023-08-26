@@ -1,5 +1,6 @@
 import './styles/main.css';
-import { addNewItem, removeItems } from './modules/genenerate_function.js';
+import { addNewItem, removeItems, clearAllCompleted } from './modules/genenerate_function.js';
+import markAsComplete from './modules/markAsComplete.js';
 
 const createItems = (items) => {
   const container = document.querySelector('.list-container');
@@ -65,16 +66,11 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    const markAsComplete = document.querySelectorAll('.check-box');
-    markAsComplete.forEach((element, index) => {
-      element.addEventListener('input', (event) => {
-        const items = JSON.parse(localStorage.getItem('toDoList')) || [];
-        items[index].completed = event.target.checked;
-        localStorage.setItem('toDoList', JSON.stringify(items));
-        // eslint-disable-next-line no-restricted-globals
-        location.reload(true);
-      });
-    });
+    markAsComplete();
+  });
+
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    clearAllCompleted(items);
   });
 });
 
