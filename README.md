@@ -81,25 +81,23 @@ npm install --save-dev hint@7.x
 ```
 
 ### Run tests
-To track linter errors locally follow these steps:
+How to run this project follow these steps:
 
-Download all the dependencies run:
+To install all the application dependencies:
 ```sh
-npm install --save-dev hint@7.x
+npm install
 ```
 
-Track HTML linter errors run:
+To bundle the HTML using webpack:
 ```sh
-npx hint .
+npm run build
 ```
 
-Track CSS linter errors run:
+To start the local server:
 ```sh
-npx stylelint "**/*.{css,scss}"
+npm run dev
 ```
-Track Javascript linter errors run:
-```sh
-npx eslint .
+
 ### Install
 
 Install this project with:

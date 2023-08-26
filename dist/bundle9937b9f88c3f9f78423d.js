@@ -601,7 +601,7 @@ const clearAllCompleted = (items) => {
   newTodos.forEach((el, i) => {
     el.index = i + 1;
   });
-  localStorage.setItem("toDoList", JSON.stringify(newTodos));
+  localStorage.setItem('toDoList', JSON.stringify(newTodos));
   // eslint-disable-next-line no-restricted-globals
   location.reload(true);
 };
@@ -619,13 +619,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const markAsComplete = function () {
-  const markComplete = document.querySelectorAll(".check-box");
+const markAsComplete = () => {
+  const markComplete = document.querySelectorAll('.check-box');
   markComplete.forEach((element, index) => {
-    element.addEventListener("input", (event) => {
-      const items = JSON.parse(localStorage.getItem("toDoList")) || [];
+    element.addEventListener('input', (event) => {
+      const items = JSON.parse(localStorage.getItem('toDoList')) || [];
       items[index].completed = event.target.checked;
-        localStorage.setItem("toDoList", JSON.stringify(items));
+      localStorage.setItem('toDoList', JSON.stringify(items));
       // eslint-disable-next-line no-restricted-globals
       location.reload(true);
     });
@@ -801,4 +801,4 @@ window.addEventListener('load', () => createItems(items));
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle48f8ae7ea55d79136f22.js.map
+//# sourceMappingURL=bundle9937b9f88c3f9f78423d.js.map
