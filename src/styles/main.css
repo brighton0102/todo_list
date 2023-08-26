@@ -94,3 +94,7 @@ ul li {
   display: flex;
   justify-content: center;
 }
+
+.delete-icon {
+  margin-left: 200px;
+}
