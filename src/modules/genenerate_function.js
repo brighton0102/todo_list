@@ -15,3 +15,13 @@ export const removeItems = (items, index) => {
     i += 1;
   }
 };
+
+export const clearAllCompleted = (items) => {
+  const newTodos = items.filter((todo) => todo.completed !== true);
+  newTodos.forEach((el, i) => {
+    el.index = i + 1;
+  });
+  localStorage.setItem("toDoList", JSON.stringify(newTodos));
+  // eslint-disable-next-line no-restricted-globals
+  location.reload(true);
+};

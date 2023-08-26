@@ -575,25 +575,65 @@ module.exports = styleTagTransform;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   addNewItem: () => (/* binding */ addNewItem),
+/* harmony export */   clearAllCompleted: () => (/* binding */ clearAllCompleted),
 /* harmony export */   removeItems: () => (/* binding */ removeItems)
 /* harmony export */ });
 const addNewItem = (itemDescription, itemsLength) => {
-    const newItem = {
-        description: itemDescription,
-        completed: false,
-        index: itemsLength + 1
-    };
-    return newItem;
+  const newItem = {
+    description: itemDescription,
+    completed: false,
+    index: itemsLength + 1,
+  };
+  return newItem;
 };
 
 const removeItems = (items, index) => {
-    items.splice(index, 1);
-    let i = index;
-    while (i < items.lenghth) {
-        items[i].index = i + 1;
-        i += 1;
-    }
+  items.splice(index, 1);
+  let i = index;
+  while (i < items.lenghth) {
+    items[i].index = i + 1;
+    i += 1;
+  }
 };
+
+const clearAllCompleted = (items) => {
+  const newTodos = items.filter((todo) => todo.completed !== true);
+  newTodos.forEach((el, i) => {
+    el.index = i + 1;
+  });
+  localStorage.setItem("toDoList", JSON.stringify(newTodos));
+  // eslint-disable-next-line no-restricted-globals
+  location.reload(true);
+};
+
+
+/***/ }),
+
+/***/ "./src/modules/markAsComplete.js":
+/*!***************************************!*\
+  !*** ./src/modules/markAsComplete.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const markAsComplete = function () {
+  const markComplete = document.querySelectorAll(".check-box");
+  markComplete.forEach((element, index) => {
+    element.addEventListener("input", (event) => {
+      const items = JSON.parse(localStorage.getItem("toDoList")) || [];
+      items[index].completed = event.target.checked;
+        localStorage.setItem("toDoList", JSON.stringify(items));
+      // eslint-disable-next-line no-restricted-globals
+      location.reload(true);
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (markAsComplete);
+
 
 /***/ })
 
@@ -679,6 +719,8 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
 /* harmony import */ var _modules_genenerate_function_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/genenerate_function.js */ "./src/modules/genenerate_function.js");
+/* harmony import */ var _modules_markAsComplete_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/markAsComplete.js */ "./src/modules/markAsComplete.js");
+
 
 
 
@@ -746,16 +788,11 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    const markAsComplete = document.querySelectorAll('.check-box');
-    markAsComplete.forEach((element, index) => {
-      element.addEventListener('input', (event) => {
-        const items = JSON.parse(localStorage.getItem('toDoList')) || [];
-        items[index].completed = event.target.checked;
-        localStorage.setItem('toDoList', JSON.stringify(items));
-        // eslint-disable-next-line no-restricted-globals
-        location.reload(true);
-      });
-    });
+    (0,_modules_markAsComplete_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  });
+
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    (0,_modules_genenerate_function_js__WEBPACK_IMPORTED_MODULE_1__.clearAllCompleted)(items);
   });
 });
 
@@ -764,4 +801,4 @@ window.addEventListener('load', () => createItems(items));
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlec508e73c39f6c0c5dc4a.js.map
+//# sourceMappingURL=bundle48f8ae7ea55d79136f22.js.map
