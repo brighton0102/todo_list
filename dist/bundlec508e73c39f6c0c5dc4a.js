@@ -115,7 +115,11 @@ ul li {
 .clear-all-btn {
   display: flex;
   justify-content: center;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,SAAA;EACA,UAAA;EACA,kCAAA;EACA,sBAAA;AAAF;;AAGA;EACE,WAAA;EACA,iBAAA;EACA,qDAAA;EACA,aAAA;AAAF;;AAGA;EACE,WAAA;EACA,gBAAA;EACA,gBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,cAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,OAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;AAAF;;AAGA;EACE,gBAAA;EACA,eAAA;EACA,2BAAA;EACA,iBAAA;EACA,eAAA;EACA,WAAA;AAAF;;AAGA;EACE,kBAAA;AAAF;;AAGA;EACE,gCAAA;EACA,kBAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;AAAF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #d47fff, #7feaff);\r\n  padding: 10px;\r\n}\r\n\r\n.todo-app {\r\n  width: 100%;\r\n  max-width: 540px;\r\n  background: #fff;\r\n  margin: 100px auto 20px;\r\n  padding: 40px 30px 70px;\r\n  border-radius: 10px;\r\n}\r\n\r\n.todo-app h2 {\r\n  color: #002765;\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.row {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  background: #edeef0;\r\n  border-radius: 30px;\r\n  padding-left: 20px;\r\n  margin-bottom: 25px;\r\n}\r\n\r\ninput {\r\n  flex: 1;\r\n  border: none;\r\n  outline: none;\r\n  background: transparent;\r\n  padding: 10px;\r\n  font-weight: 400;\r\n}\r\n\r\n.add-btn {\r\n  border: none;\r\n  outline: none;\r\n  padding: 16px 50px;\r\n  background: #ff5945;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border-radius: 40px;\r\n}\r\n\r\nul li {\r\n  list-style: none;\r\n  font-size: 17px;\r\n  padding: 12px 8px 12px 50px;\r\n  user-select: none;\r\n  cursor: pointer;\r\n  color: #000;\r\n}\r\n\r\n.check-box {\r\n  margin-right: 1rem;\r\n}\r\n\r\n.list-item {\r\n  border-bottom: 1px solid #c8c8c8;\r\n  padding: 1rem 1rem;\r\n}\r\n\r\n#clear-btn {\r\n  border: none;\r\n  outline: none;\r\n  padding: 16px 50px;\r\n  background: #ff5945;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border-radius: 40px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.clear-all-btn {\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n"],"sourceRoot":""}]);
+}
+
+.delete-icon {
+  margin-left: 200px;
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,SAAA;EACA,UAAA;EACA,kCAAA;EACA,sBAAA;AAAF;;AAGA;EACE,WAAA;EACA,iBAAA;EACA,qDAAA;EACA,aAAA;AAAF;;AAGA;EACE,WAAA;EACA,gBAAA;EACA,gBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,cAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,OAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;AAAF;;AAGA;EACE,gBAAA;EACA,eAAA;EACA,2BAAA;EACA,iBAAA;EACA,eAAA;EACA,WAAA;AAAF;;AAGA;EACE,kBAAA;AAAF;;AAGA;EACE,gCAAA;EACA,kBAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;AAAF;;AAGA;EACE,kBAAA;AAAF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  min-height: 100vh;\r\n  background: linear-gradient(135deg, #d47fff, #7feaff);\r\n  padding: 10px;\r\n}\r\n\r\n.todo-app {\r\n  width: 100%;\r\n  max-width: 540px;\r\n  background: #fff;\r\n  margin: 100px auto 20px;\r\n  padding: 40px 30px 70px;\r\n  border-radius: 10px;\r\n}\r\n\r\n.todo-app h2 {\r\n  color: #002765;\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.row {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  background: #edeef0;\r\n  border-radius: 30px;\r\n  padding-left: 20px;\r\n  margin-bottom: 25px;\r\n}\r\n\r\ninput {\r\n  flex: 1;\r\n  border: none;\r\n  outline: none;\r\n  background: transparent;\r\n  padding: 10px;\r\n  font-weight: 400;\r\n}\r\n\r\n.add-btn {\r\n  border: none;\r\n  outline: none;\r\n  padding: 16px 50px;\r\n  background: #ff5945;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border-radius: 40px;\r\n}\r\n\r\nul li {\r\n  list-style: none;\r\n  font-size: 17px;\r\n  padding: 12px 8px 12px 50px;\r\n  user-select: none;\r\n  cursor: pointer;\r\n  color: #000;\r\n}\r\n\r\n.check-box {\r\n  margin-right: 1rem;\r\n}\r\n\r\n.list-item {\r\n  border-bottom: 1px solid #c8c8c8;\r\n  padding: 1rem 1rem;\r\n}\r\n\r\n#clear-btn {\r\n  border: none;\r\n  outline: none;\r\n  padding: 16px 50px;\r\n  background: #ff5945;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border-radius: 40px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.clear-all-btn {\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.delete-icon {\r\n  margin-left: 200px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -560,6 +564,37 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/modules/genenerate_function.js":
+/*!********************************************!*\
+  !*** ./src/modules/genenerate_function.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   addNewItem: () => (/* binding */ addNewItem),
+/* harmony export */   removeItems: () => (/* binding */ removeItems)
+/* harmony export */ });
+const addNewItem = (itemDescription, itemsLength) => {
+    const newItem = {
+        description: itemDescription,
+        completed: false,
+        index: itemsLength + 1
+    };
+    return newItem;
+};
+
+const removeItems = (items, index) => {
+    items.splice(index, 1);
+    let i = index;
+    while (i < items.lenghth) {
+        items[i].index = i + 1;
+        i += 1;
+    }
+};
+
 /***/ })
 
 /******/ 	});
@@ -643,39 +678,90 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
+/* harmony import */ var _modules_genenerate_function_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/genenerate_function.js */ "./src/modules/genenerate_function.js");
 
 
-const tasks = [
-  {
-    description: 'learn javascript',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'learn OOP',
-    completed: false,
-    index: 0,
-  },
-];
 
-const showTasks = () => {
+const createItems = (items) => {
   const container = document.querySelector('.list-container');
 
-  // Sorting components array based on index property
+  // clearing the container
 
-  tasks.sort((a, b) => a.index - b.index);
+  container.innerHTML = '';
 
-  tasks.forEach((task) => {
-    const items = document.createElement('li');
-    items.className = 'list-item';
-    items.innerHTML = `<input class="check-box" type="checkbox">${task.description}`;
-    container.appendChild(items);
+  items.sort((a, b) => a.index - b.index);
+  items.forEach((item) => {
+    const list = document.createElement('li');
+    list.className = 'list-item';
+    list.dataset.index = item.index - 1;
+    list.innerHTML = `
+    <div class="listboxflex">
+      <input class="check-box" type="checkbox" ${item.completed && 'checked'} >
+      <input class="description" value="${item.description}">
+      <a><i class="fa-solid fa-trash delete-icon"></i></a>
+    </div>
+    `;
+    container.appendChild(list);
   });
 };
 
-window.addEventListener('load', showTasks);
+// Adding elements
+
+const items = JSON.parse(localStorage.getItem('toDoList')) || [];
+const addButton = document.querySelector('.add-btn');
+addButton.addEventListener('click', () => {
+  const addList = document.querySelector('.field');
+  if (addList.value !== '') {
+    const itemDescription = addList.value;
+    items.push((0,_modules_genenerate_function_js__WEBPACK_IMPORTED_MODULE_1__.addNewItem)(itemDescription, items.length));
+    createItems(items);
+    localStorage.setItem('toDoList', JSON.stringify(items));
+    addList.value = '';
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  // Removing elements
+  const container = document.querySelector('.list-container');
+  container.addEventListener('click', (event) => {
+    const removeIcons = document.querySelectorAll('.delete-icon');
+    removeIcons.forEach((icon, index) => {
+      if (event.target === icon) {
+        (0,_modules_genenerate_function_js__WEBPACK_IMPORTED_MODULE_1__.removeItems)(items, index);
+        // re-order index value in the array
+        items.forEach((el, i) => {
+          el.index = i + 1;
+        });
+        createItems(items);
+        localStorage.setItem('toDoList', JSON.stringify(items));
+      }
+    });
+    // edit element
+    const editElem = document.querySelectorAll('.description');
+    editElem.forEach((element, index) => {
+      element.addEventListener('input', (event) => {
+        const items = JSON.parse(localStorage.getItem('toDoList')) || [];
+        items[index].description = event.target.value;
+        localStorage.setItem('toDoList', JSON.stringify(items));
+      });
+    });
+
+    const markAsComplete = document.querySelectorAll('.check-box');
+    markAsComplete.forEach((element, index) => {
+      element.addEventListener('input', (event) => {
+        const items = JSON.parse(localStorage.getItem('toDoList')) || [];
+        items[index].completed = event.target.checked;
+        localStorage.setItem('toDoList', JSON.stringify(items));
+        // eslint-disable-next-line no-restricted-globals
+        location.reload(true);
+      });
+    });
+  });
+});
+
+window.addEventListener('load', () => createItems(items));
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle2789dd4f83429708e0ae.js.map
+//# sourceMappingURL=bundlec508e73c39f6c0c5dc4a.js.map
