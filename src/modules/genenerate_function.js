@@ -21,7 +21,7 @@ export const clearAllCompleted = (items) => {
   newTodos.forEach((el, i) => {
     el.index = i + 1;
   });
-  localStorage.setItem("toDoList", JSON.stringify(newTodos));
+  localStorage.setItem('toDoList', JSON.stringify(newTodos));
   // eslint-disable-next-line no-restricted-globals
   location.reload(true);
 };
