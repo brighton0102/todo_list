@@ -1,4 +1,3 @@
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -73,6 +72,7 @@ git clone git@github.com:brighton0102/todo_list.git
 ```
 
 ### Install
+
 Install this project with:
 
 ```sh
@@ -81,19 +81,23 @@ npm install --save-dev hint@7.x
 ```
 
 ### Run tests
+
 How to run this project follow these steps:
 
 To install all the application dependencies:
+
 ```sh
 npm install
 ```
 
 To bundle the HTML using webpack:
+
 ```sh
 npm run build
 ```
 
 To start the local server:
+
 ```sh
 npm run dev
 ```
@@ -128,6 +132,10 @@ To run the project, execute the "index.html" file in your browser
 - GitHub: [brighton0102](htpps://github.com/brighton0102)
 - Twitter: [@brighton_ui](https://twitter.com/brighton_ui)
 - LinkedIn: [brighton](https://www.linkedin.com/in/brighton-mtandi-976615267/)
+
+👤 **ENSSAH FAYIA MOMOH**
+
+- GitHub: [efmomoh](https://github.com/efmomoh)
 
 <!-- FUTURE FEATURES -->
 
