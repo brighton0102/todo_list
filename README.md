@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -43,6 +44,14 @@
 
 - **[Add button to add a new task to the collection]**
 - **[Includes a remove button to remove a task from the collection]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+You can find a live demo in [HERE](https://brighton0102.github.io/todo_list/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
